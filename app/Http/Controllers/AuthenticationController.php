@@ -11,7 +11,7 @@ class AuthenticationController extends Controller
   {
     $pageConfigs = ['blankPage' => true];
 
-    return view('/content/authentication/auth-login-v1', ['pageConfigs' => $pageConfigs]);
+    return view('/admin/content/authentication/auth-login-v1', ['pageConfigs' => $pageConfigs]);
   }
 
   // Login v2
@@ -19,7 +19,7 @@ class AuthenticationController extends Controller
   {
     $pageConfigs = ['blankPage' => true];
 
-    return view('/content/authentication/auth-login-v2', ['pageConfigs' => $pageConfigs]);
+    return view('/admin/content/authentication/auth-login-v2', ['pageConfigs' => $pageConfigs]);
   }
 
   // Register v1
@@ -27,7 +27,7 @@ class AuthenticationController extends Controller
   {
     $pageConfigs = ['blankPage' => true];
 
-    return view('/content/authentication/auth-register-v1', ['pageConfigs' => $pageConfigs]);
+    return view('/admin/content/authentication/auth-register-v1', ['pageConfigs' => $pageConfigs]);
   }
 
   // Register v2
@@ -35,7 +35,7 @@ class AuthenticationController extends Controller
   {
     $pageConfigs = ['blankPage' => true];
 
-    return view('/content/authentication/auth-register-v2', ['pageConfigs' => $pageConfigs]);
+    return view('/admin/content/authentication/auth-register-v2', ['pageConfigs' => $pageConfigs]);
   }
 
   // Forgot Password v1
@@ -43,7 +43,7 @@ class AuthenticationController extends Controller
   {
     $pageConfigs = ['blankPage' => true];
 
-    return view('/content/authentication/auth-forgot-password-v1', ['pageConfigs' => $pageConfigs]);
+    return view('/admin/content/authentication/auth-forgot-password-v1', ['pageConfigs' => $pageConfigs]);
   }
 
   // Forgot Password v2
@@ -51,7 +51,7 @@ class AuthenticationController extends Controller
   {
     $pageConfigs = ['blankPage' => true];
 
-    return view('/content/authentication/auth-forgot-password-v2', ['pageConfigs' => $pageConfigs]);
+    return view('/admin/content/authentication/auth-forgot-password-v2', ['pageConfigs' => $pageConfigs]);
   }
 
   // Reset Password
@@ -59,7 +59,7 @@ class AuthenticationController extends Controller
   {
     $pageConfigs = ['blankPage' => true];
 
-    return view('/content/authentication/auth-reset-password-v1', ['pageConfigs' => $pageConfigs]);
+    return view('/admin/content/authentication/auth-reset-password-v1', ['pageConfigs' => $pageConfigs]);
   }
 
   // Reset Password
@@ -67,6 +67,6 @@ class AuthenticationController extends Controller
   {
     $pageConfigs = ['blankPage' => true];
 
-    return view('/content/authentication/auth-reset-password-v2', ['pageConfigs' => $pageConfigs]);
+    return view('/admin/content/authentication/auth-reset-password-v2', ['pageConfigs' => $pageConfigs]);
   }
 }

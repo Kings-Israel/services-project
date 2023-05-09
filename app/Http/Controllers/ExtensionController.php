@@ -12,7 +12,7 @@ class ExtensionController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Extensions"], ['name' => "Sweet Alerts"]
     ];
-    return view('/content/extensions/ext-component-sweet-alerts', [
+    return view('/admin/content/extensions/ext-component-sweet-alerts', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -23,7 +23,7 @@ class ExtensionController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Extensions"], ['name' => "BlockUI"]
     ];
-    return view('/content/extensions/ext-component-block-ui', [
+    return view('/admin/content/extensions/ext-component-block-ui', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -34,7 +34,7 @@ class ExtensionController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Extensions"], ['name' => "Toastr"]
     ];
-    return view('/content/extensions/ext-component-toastr', [
+    return view('/admin/content/extensions/ext-component-toastr', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -45,7 +45,7 @@ class ExtensionController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Extensions"], ['name' => "Sliders"]
     ];
-    return view('/content/extensions/ext-component-slider', [
+    return view('/admin/content/extensions/ext-component-slider', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -56,7 +56,7 @@ class ExtensionController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Extensions"], ['name' => "Drag & Drop"]
     ];
-    return view('/content/extensions/ext-component-drag-drop', [
+    return view('/admin/content/extensions/ext-component-drag-drop', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -67,7 +67,7 @@ class ExtensionController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Extensions"], ['name' => "Tour"]
     ];
-    return view('/content/extensions/ext-component-tour', [
+    return view('/admin/content/extensions/ext-component-tour', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -78,7 +78,7 @@ class ExtensionController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Extensions"], ['name' => "Clipboard"]
     ];
-    return view('/content/extensions/ext-component-clipboard', [
+    return view('/admin/content/extensions/ext-component-clipboard', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -89,7 +89,7 @@ class ExtensionController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Extensions"], ['name' => "Media Player"]
     ];
-    return view('/content/extensions/ext-component-media-player', [
+    return view('/admin/content/extensions/ext-component-media-player', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -100,7 +100,7 @@ class ExtensionController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Extensions"], ['name' => "Context Menu"]
     ];
-    return view('/content/extensions/ext-component-context-menu', [
+    return view('/admin/content/extensions/ext-component-context-menu', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -111,7 +111,7 @@ class ExtensionController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Extensions"], ['name' => "Swiper"]
     ];
-    return view('/content/extensions/ext-component-swiper', [
+    return view('/admin/content/extensions/ext-component-swiper', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -122,7 +122,7 @@ class ExtensionController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Extensions"], ['name' => "Tree"]
     ];
-    return view('/content/extensions/ext-component-tree', [
+    return view('/admin/content/extensions/ext-component-tree', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -133,7 +133,7 @@ class ExtensionController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Extensions"], ['name' => "Ratings"]
     ];
-    return view('/content/extensions/ext-component-ratings', [
+    return view('/admin/content/extensions/ext-component-ratings', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -144,7 +144,7 @@ class ExtensionController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Extensions"], ['name' => "Locale"]
     ];
-    return view('/content/locale/locale', [
+    return view('/admin/content/locale/locale', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }

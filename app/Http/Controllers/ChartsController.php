@@ -12,7 +12,7 @@ class ChartsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Charts & Maps"], ['name' => "Apex"]
         ];
-        return view('/content/charts-maps/chart-apex', [
+        return view('/admin/content/charts-maps/chart-apex', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -23,7 +23,7 @@ class ChartsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Charts & Maps"], ['name' => "Chartjs"]
         ];
-        return view('/content/charts-maps/chart-chartjs', [
+        return view('/admin/content/charts-maps/chart-chartjs', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -34,7 +34,7 @@ class ChartsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Maps"], ['name' => "Leaflet Maps"]
         ];
-        return view('/content/charts-maps/maps-leaflet', [
+        return view('/admin/content/charts-maps/maps-leaflet', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }

@@ -10,7 +10,7 @@ class TableController extends Controller
   public function table()
   {
     $breadcrumbs = [['link' => "/", 'name' => "Home"], ['name' => "Table Bootstrap"]];
-    return view('/content/table/table-bootstrap/table-bootstrap', [
+    return view('/admin/content/table/table-bootstrap/table-bootstrap', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -19,7 +19,7 @@ class TableController extends Controller
   public function datatable_basic()
   {
     $breadcrumbs = [['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Datatable"], ['name' => "Basic"]];
-    return view('/content/table/table-datatable/table-datatable-basic', ['breadcrumbs' => $breadcrumbs]);
+    return view('/admin/content/table/table-datatable/table-datatable-basic', ['breadcrumbs' => $breadcrumbs]);
   }
 
   // Datatable Basic
@@ -28,7 +28,7 @@ class TableController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Datatable"], ['name' => "Advanced"]
     ];
-    return view('/content/table/table-datatable/table-datatable-advance', [
+    return view('/admin/content/table/table-datatable/table-datatable-advance', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -39,7 +39,7 @@ class TableController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['name' => "agGrid Table"]
     ];
-    return view('/content/table/table-ag-grid/table-ag-grid', [
+    return view('/admin/content/table/table-ag-grid/table-ag-grid', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }

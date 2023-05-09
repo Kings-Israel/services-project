@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\DashboardController;
@@ -33,24 +34,28 @@ use Illuminate\Support\Facades\Auth;
 // Route::get('/', [DashboardController::class,'dashboardEcommerce'])->name('dashboard-ecommerce')->middleware('verified');
 
 
-Route::middleware('guest')->group(function () {
-    Route::post('/login', [LoginController::class, 'login'])->name('login');
+Route::group(['prefix' => '/admin', 'as' => 'admin.'], function () {
+    Route::group(['middleware' => 'guest'], function () {
+        Route::get('/login', [AdminController::class, 'showLoginForm'])->name('login.show');
+        Route::post('/login', [AdminController::class, 'login'])->name('login');
+    });
+
+    Route::middleware('auth:admin')->group(function () {
+        Route::get('/', [DashboardController::class, 'dashboardEcommerce'])->name('dashboard');
+        /* Route Dashboards */
+        Route::group(['prefix' => 'dashboard'], function () {
+            Route::get('analytics', [DashboardController::class, 'dashboardAnalytics'])->name('dashboard-analytics');
+            Route::get('ecommerce', [DashboardController::class, 'dashboardEcommerce'])->name('dashboard-ecommerce');
+        });
+        /* Route Dashboards */
+
+        /* Logout */
+        Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
+    });
 });
 
 Auth::routes(['verify' => true]);
 
-Route::middleware('auth:admin')->group(function () {
-    Route::get('/', [DashboardController::class, 'dashboardEcommerce'])->name('dashboard');
-    /* Route Dashboards */
-    Route::group(['prefix' => 'dashboard'], function () {
-        Route::get('analytics', [DashboardController::class, 'dashboardAnalytics'])->name('dashboard-analytics');
-        Route::get('ecommerce', [DashboardController::class, 'dashboardEcommerce'])->name('dashboard-ecommerce');
-    });
-    /* Route Dashboards */
-
-    /* Logout */
-    Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
-});
 
 /* Route Apps */
 Route::group(['prefix' => 'app'], function () {

@@ -11,7 +11,7 @@ class AppsController extends Controller
     {
         $pageConfigs = ['pageHeader' => false];
 
-        return view('/content/apps/invoice/app-invoice-list', ['pageConfigs' => $pageConfigs]);
+        return view('/admin/content/apps/invoice/app-invoice-list', ['pageConfigs' => $pageConfigs]);
     }
 
     // invoice preview App
@@ -19,7 +19,7 @@ class AppsController extends Controller
     {
         $pageConfigs = ['pageHeader' => false];
 
-        return view('/content/apps/invoice/app-invoice-preview', ['pageConfigs' => $pageConfigs]);
+        return view('/admin/content/apps/invoice/app-invoice-preview', ['pageConfigs' => $pageConfigs]);
     }
 
     // invoice edit App
@@ -27,7 +27,7 @@ class AppsController extends Controller
     {
         $pageConfigs = ['pageHeader' => false];
 
-        return view('/content/apps/invoice/app-invoice-edit', ['pageConfigs' => $pageConfigs]);
+        return view('/admin/content/apps/invoice/app-invoice-edit', ['pageConfigs' => $pageConfigs]);
     }
 
     // invoice edit App
@@ -35,7 +35,7 @@ class AppsController extends Controller
     {
         $pageConfigs = ['pageHeader' => false];
 
-        return view('/content/apps/invoice/app-invoice-add', ['pageConfigs' => $pageConfigs]);
+        return view('/admin/content/apps/invoice/app-invoice-add', ['pageConfigs' => $pageConfigs]);
     }
 
     // invoice print App
@@ -43,28 +43,28 @@ class AppsController extends Controller
     {
         $pageConfigs = ['pageHeader' => false];
 
-        return view('/content/apps/invoice/app-invoice-print', ['pageConfigs' => $pageConfigs]);
+        return view('/admin/content/apps/invoice/app-invoice-print', ['pageConfigs' => $pageConfigs]);
     }
 
     // User List Page
     public function user_list()
     {
         $pageConfigs = ['pageHeader' => false];
-        return view('/content/apps/user/app-user-list', ['pageConfigs' => $pageConfigs]);
+        return view('/admin/content/apps/user/app-user-list', ['pageConfigs' => $pageConfigs]);
     }
 
     // User View Page
     public function user_view()
     {
         $pageConfigs = ['pageHeader' => false];
-        return view('/content/apps/user/app-user-view', ['pageConfigs' => $pageConfigs]);
+        return view('/admin/content/apps/user/app-user-view', ['pageConfigs' => $pageConfigs]);
     }
 
     // User Edit Page
     public function user_edit()
     {
         $pageConfigs = ['pageHeader' => false];
-        return view('/content/apps/user/app-user-edit', ['pageConfigs' => $pageConfigs]);
+        return view('/admin/content/apps/user/app-user-edit', ['pageConfigs' => $pageConfigs]);
     }
 
     // Chat App
@@ -76,7 +76,7 @@ class AppsController extends Controller
             'pageClass' => 'chat-application',
         ];
 
-        return view('/content/apps/chat/app-chat', [
+        return view('/admin/content/apps/chat/app-chat', [
             'pageConfigs' => $pageConfigs
         ]);
     }
@@ -88,7 +88,7 @@ class AppsController extends Controller
             'pageHeader' => false
         ];
 
-        return view('/content/apps/calendar/app-calendar', [
+        return view('/admin/content/apps/calendar/app-calendar', [
             'pageConfigs' => $pageConfigs
         ]);
     }
@@ -102,7 +102,7 @@ class AppsController extends Controller
             'pageClass' => 'email-application',
         ];
 
-        return view('/content/apps/email/app-email', ['pageConfigs' => $pageConfigs]);
+        return view('/admin/content/apps/email/app-email', ['pageConfigs' => $pageConfigs]);
     }
     // ToDo App
     public function todoApp()
@@ -113,7 +113,7 @@ class AppsController extends Controller
             'pageClass' => 'todo-application',
         ];
 
-        return view('/content/apps/todo/app-todo', [
+        return view('/admin/content/apps/todo/app-todo', [
             'pageConfigs' => $pageConfigs
         ]);
     }
@@ -126,7 +126,7 @@ class AppsController extends Controller
             'pageClass' => 'file-manager-application',
         ];
 
-        return view('/content/apps/fileManager/app-file-manager', ['pageConfigs' => $pageConfigs]);
+        return view('/admin/content/apps/fileManager/app-file-manager', ['pageConfigs' => $pageConfigs]);
     }
 
     // Kanban App
@@ -137,7 +137,7 @@ class AppsController extends Controller
             'pageClass' => 'kanban-application',
         ];
 
-        return view('/content/apps/kanban/app-kanban', ['pageConfigs' => $pageConfigs]);
+        return view('/admin/content/apps/kanban/app-kanban', ['pageConfigs' => $pageConfigs]);
     }
 
     // Ecommerce Shop
@@ -152,7 +152,7 @@ class AppsController extends Controller
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "eCommerce"], ['name' => "Shop"]
         ];
 
-        return view('/content/apps/ecommerce/app-ecommerce-shop', [
+        return view('/admin/content/apps/ecommerce/app-ecommerce-shop', [
             'pageConfigs' => $pageConfigs,
             'breadcrumbs' => $breadcrumbs
         ]);
@@ -169,7 +169,7 @@ class AppsController extends Controller
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "eCommerce"], ['link' => "/app/ecommerce/shop", 'name' => "Shop"], ['name' => "Details"]
         ];
 
-        return view('/content/apps/ecommerce/app-ecommerce-details', [
+        return view('/admin/content/apps/ecommerce/app-ecommerce-details', [
             'pageConfigs' => $pageConfigs,
             'breadcrumbs' => $breadcrumbs
         ]);
@@ -186,7 +186,7 @@ class AppsController extends Controller
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "eCommerce"], ['name' => "Wish List"]
         ];
 
-        return view('/content/apps/ecommerce/app-ecommerce-wishlist', [
+        return view('/admin/content/apps/ecommerce/app-ecommerce-wishlist', [
             'pageConfigs' => $pageConfigs,
             'breadcrumbs' => $breadcrumbs
         ]);
@@ -203,7 +203,7 @@ class AppsController extends Controller
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "eCommerce"], ['name' => "Checkout"]
         ];
 
-        return view('/content/apps/ecommerce/app-ecommerce-checkout', [
+        return view('/admin/content/apps/ecommerce/app-ecommerce-checkout', [
             'pageConfigs' => $pageConfigs,
             'breadcrumbs' => $breadcrumbs
         ]);

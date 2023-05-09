@@ -1,0 +1,209 @@
+openapi: 3.0.3
+info:
+  title: Services
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://services.test'
+paths:
+  /api/login:
+    post:
+      summary: 'Login the user to their account'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'Authentication APIs'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: 'The user''s email address'
+                  example: blanditiis
+                password:
+                  type: string
+                  description: 'The user''s password'
+                  example: unde
+              required:
+                - email
+                - password
+      security: []
+  /api/register:
+    post:
+      summary: 'Register New User.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'Authentication APIs'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                f_name:
+                  type: string
+                  description: 'The user''s first name'
+                  example: vero
+                l_name:
+                  type: string
+                  description: 'The user''s last name'
+                  example: quod
+                email:
+                  type: string
+                  description: 'The user''s email address'
+                  example: consequatur
+                phone_number:
+                  type: string
+                  description: 'The user''s phone number'
+                  example: aut
+                password:
+                  type: string
+                  description: 'The user''s password'
+                  example: quidem
+              required:
+                - f_name
+                - l_name
+                - email
+                - phone_number
+                - password
+      security: []
+  /api/google/auth:
+    post:
+      summary: 'Social Login'
+      description: 'Login through google'
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example: {  }
+                properties: {  }
+      tags:
+        - 'Authentication APIs'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'The name of the user'
+                  example: omnis
+                email:
+                  type: string
+                  description: 'The email of the user'
+                  example: ea
+                phone_number:
+                  type: string
+                  description: 'The user''s phone number'
+                  example: quisquam
+                token:
+                  type: string
+                  description: 'A google provided token'
+                  example: earum
+                email_verified:
+                  type: boolean
+                  description: 'Whether the user email is verified'
+                  example: true
+              required:
+                - name
+                - email
+      security: []
+  /api/user:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+tags:
+  -
+    name: 'Authentication APIs'
+    description: ''
+  -
+    name: Endpoints
+    description: ''

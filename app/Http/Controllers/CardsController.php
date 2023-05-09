@@ -12,7 +12,7 @@ class CardsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Card"], ['name' => "Basic Card"]
     ];
-    return view('/content/cards/card-basic', [
+    return view('/admin/content/cards/card-basic', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -23,7 +23,7 @@ class CardsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Card"], ['name' => "Advance Card"]
     ];
-    return view('/content/cards/card-advance', [
+    return view('/admin/content/cards/card-advance', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -34,7 +34,7 @@ class CardsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Card"], ['name' => "Statistics Cards"]
     ];
-    return view('/content/cards/card-statistics', [
+    return view('/admin/content/cards/card-statistics', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -45,7 +45,7 @@ class CardsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Card"], ['name' => "Analytics Cards"]
     ];
-    return view('/content/cards/card-analytics', [
+    return view('/admin/content/cards/card-analytics', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -56,7 +56,7 @@ class CardsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Card"], ['name' => "Card Actions"]
     ];
-    return view('/content/cards/card-actions', [
+    return view('/admin/content/cards/card-actions', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }

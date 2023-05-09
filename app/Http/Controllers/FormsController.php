@@ -12,7 +12,7 @@ class FormsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Form Elements"], ['name' => "Input"]
     ];
-    return view('/content/forms/form-elements/form-input', [
+    return view('/admin/content/forms/form-elements/form-input', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -23,7 +23,7 @@ class FormsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Form Elements"], ['name' => "Input Groups"]
     ];
-    return view('/content/forms/form-elements/form-input-groups', [
+    return view('/admin/content/forms/form-elements/form-input-groups', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -34,7 +34,7 @@ class FormsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Form Elements"], ['name' => "Input Mask"]
     ];
-    return view('/content/forms/form-elements/form-input-mask', [
+    return view('/admin/content/forms/form-elements/form-input-mask', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -45,7 +45,7 @@ class FormsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Form Elements"], ['name' => "Textarea"]
     ];
-    return view('/content/forms/form-elements/form-textarea', [
+    return view('/admin/content/forms/form-elements/form-textarea', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -56,7 +56,7 @@ class FormsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Form Elements"], ['name' => "Checkbox"]
     ];
-    return view('/content/forms/form-elements/form-checkbox', [
+    return view('/admin/content/forms/form-elements/form-checkbox', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -67,7 +67,7 @@ class FormsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Form Elements"], ['name' => "Radio"]
     ];
-    return view('/content/forms/form-elements/form-radio', [
+    return view('/admin/content/forms/form-elements/form-radio', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -78,7 +78,7 @@ class FormsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Form Elements"], ['name' => "Switch"]
     ];
-    return view('/content/forms/form-elements/form-switch', [
+    return view('/admin/content/forms/form-elements/form-switch', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -89,7 +89,7 @@ class FormsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Form Elements"], ['name' => "Select"]
     ];
-    return view('/content/forms/form-elements/form-select', [
+    return view('/admin/content/forms/form-elements/form-select', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -102,7 +102,7 @@ class FormsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Form Elements"], ['name' => "Number Input"]
     ];
-    return view('/content/forms/form-elements/form-number-input', [
+    return view('/admin/content/forms/form-elements/form-number-input', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -113,7 +113,7 @@ class FormsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Form Elements"], ['name' => "File Uploader"]
     ];
-    return view('/content/forms/form-elements/form-file-uploader', [
+    return view('/admin/content/forms/form-elements/form-file-uploader', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -124,7 +124,7 @@ class FormsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Form Elements"], ['name' => "Quill Editor"]
     ];
-    return view('/content/forms/form-elements/form-quill-editor', [
+    return view('/admin/content/forms/form-elements/form-quill-editor', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -135,7 +135,7 @@ class FormsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Form Elements"], ['name' => "Date & Time Picker"]
     ];
-    return view('/content/forms/form-elements/form-date-time-picker', [
+    return view('/admin/content/forms/form-elements/form-date-time-picker', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -146,7 +146,7 @@ class FormsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Forms"], ['name' => "Form Layouts"]
     ];
-    return view('/content/forms/form-layout', [
+    return view('/admin/content/forms/form-layout', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -157,7 +157,7 @@ class FormsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Forms"], ['name' => "Form Wizard"]
     ];
-    return view('/content/forms/form-wizard', [
+    return view('/admin/content/forms/form-wizard', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -168,7 +168,7 @@ class FormsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Forms"], ['name' => "Form Validation"]
     ];
-    return view('/content/forms/form-validation', [
+    return view('/admin/content/forms/form-validation', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }
@@ -178,7 +178,7 @@ class FormsController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Forms"], ['name' => "Form Repeater"]
     ];
-    return view('/content/forms/form-repeater', [
+    return view('/admin/content/forms/form-repeater', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }

@@ -12,7 +12,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Alerts"]
         ];
-        return view('/content/components/component-alerts', [
+        return view('/admin/content/components/component-alerts', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -23,7 +23,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Avatar"]
         ];
-        return view('/content/components/component-avatar', [
+        return view('/admin/content/components/component-avatar', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -34,7 +34,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Badges"]
         ];
-        return view('/content/components/component-badges', [
+        return view('/admin/content/components/component-badges', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -45,7 +45,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Breadcrumbs"]
         ];
-        return view('/content/components/component-breadcrumbs', [
+        return view('/admin/content/components/component-breadcrumbs', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -56,7 +56,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Buttons"]
         ];
-        return view('/content/components/component-buttons', [
+        return view('/admin/content/components/component-buttons', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -67,7 +67,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Carousel"]
         ];
-        return view('/content/components/component-carousel', [
+        return view('/admin/content/components/component-carousel', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -78,7 +78,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Collapse"]
         ];
-        return view('/content/components/component-collapse', [
+        return view('/admin/content/components/component-collapse', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -89,7 +89,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Divider"]
         ];
-        return view('/content/components/component-divider', [
+        return view('/admin/content/components/component-divider', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -100,7 +100,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Dropdowns"]
         ];
-        return view('/content/components/component-dropdowns', [
+        return view('/admin/content/components/component-dropdowns', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -111,7 +111,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "List Group"]
         ];
-        return view('/content/components/component-list-group', [
+        return view('/admin/content/components/component-list-group', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -122,7 +122,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Media Objects"]
         ];
-        return view('/content/components/component-media-objects', [
+        return view('/admin/content/components/component-media-objects', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -133,7 +133,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Modals"]
         ];
-        return view('/content/components/component-modals', [
+        return view('/admin/content/components/component-modals', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -144,7 +144,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Navs"]
         ];
-        return view('/content/components/component-navs', [
+        return view('/admin/content/components/component-navs', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -155,7 +155,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Pagination"]
         ];
-        return view('/content/components/component-pagination', [
+        return view('/admin/content/components/component-pagination', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -166,7 +166,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Pill Badges"]
         ];
-        return view('/content/components/component-pill-badges', [
+        return view('/admin/content/components/component-pill-badges', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -177,7 +177,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Pills"]
         ];
-        return view('/content/components/component-pills', [
+        return view('/admin/content/components/component-pills', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -188,7 +188,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Tabs"]
         ];
-        return view('/content/components/component-tabs', [
+        return view('/admin/content/components/component-tabs', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -200,7 +200,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Tooltips"]
         ];
-        return view('/content/components/component-tooltips', [
+        return view('/admin/content/components/component-tooltips', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -211,7 +211,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Popovers"]
         ];
-        return view('/content/components/component-popovers', [
+        return view('/admin/content/components/component-popovers', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -222,7 +222,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Progress"]
         ];
-        return view('/content/components/component-progress', [
+        return view('/admin/content/components/component-progress', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -233,7 +233,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Spinner"]
         ];
-        return view('/content/components/component-spinner', [
+        return view('/admin/content/components/component-spinner', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -244,7 +244,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Timeline"]
         ];
-        return view('/content/components/component-timeline', [
+        return view('/admin/content/components/component-timeline', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
@@ -255,7 +255,7 @@ class ComponentsController extends Controller
         $breadcrumbs = [
             ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Components"], ['name' => "Toast"]
         ];
-        return view('/content/components/component-toast', [
+        return view('/admin/content/components/component-toast', [
             'breadcrumbs' => $breadcrumbs
         ]);
     }
