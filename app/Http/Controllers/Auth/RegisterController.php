@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
+use F9Web\ApiResponseHelpers;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -17,7 +18,7 @@ use Symfony\Component\HttpFoundation\Response;
  */
 class RegisterController extends Controller
 {
-    use RegistersUsers;
+    use RegistersUsers, ApiResponseHelpers;
 
     protected $redirectTo = RouteServiceProvider::HOME;
 
@@ -65,7 +66,7 @@ class RegisterController extends Controller
         Auth::login($user);
 
         if ($request->wantsJson()) {
-            $token = $request->user()->createToken($user->email);
+            $token = $user->createToken($user->email)->plainTextToken;
 
             if ($request->has('device_token') && $request->device_token != '') {
                 $user->update([
@@ -73,10 +74,11 @@ class RegisterController extends Controller
                 ]);
             }
 
-            return response()->json([
-                'access_token' => $token,
-                'user_data' => $user,
-            ]);
+            // return response()->json([
+            //     'access_token' => $token,
+            //     'user_data' => $user,
+            // ]);
+            return $this->respondWithSuccess(['data' => $user, 'token' => $token]);
         } else {
             $request->session()->regenerate();
             return redirect()->intended('/');
@@ -155,10 +157,11 @@ class RegisterController extends Controller
 
                 if ($request->wantsJson()) {
                     $token = $user->createToken($request->email)->plainTextToken;
-                    return response()->json([
-                        'access_token' => $token,
-                        'user_data' => $savedUser,
-                    ]);
+                    // return response()->json([
+                    //     'access_token' => $token,
+                    //     'user_data' => $savedUser,
+                    // ]);
+                    return $this->respondWithSuccess(['data' => $savedUser, 'token' => $token]);
                 } else {
                     $request->session()->regenerate();
                     return redirect()->intended('/');

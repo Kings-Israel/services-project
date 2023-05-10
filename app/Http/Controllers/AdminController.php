@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Review;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -29,5 +30,17 @@ class AdminController extends Controller
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
         ]);
+    }
+
+    public function services()
+    {
+        return view('admin.content.services.index');
+    }
+
+    public function reviews()
+    {
+        $reviews = Review::with('service')->get();
+        
+        // TODO: Add view to see all reviews
     }
 }

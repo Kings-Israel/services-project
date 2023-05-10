@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Services",
-        "_postman_id": "b097566a-a133-43b9-8d2d-ccf5e9902808",
+        "_postman_id": "f89aa3ba-b3ce-4deb-8e4d-413f7102e83b",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"blanditiis\",\"password\":\"unde\"}"
+                            "raw": "{\"email\":\"accusantium\",\"password\":\"ad\"}"
                         },
                         "description": "",
                         "auth": {
@@ -72,7 +72,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"f_name\":\"vero\",\"l_name\":\"quod\",\"email\":\"consequatur\",\"phone_number\":\"aut\",\"password\":\"quidem\"}"
+                            "raw": "{\"f_name\":\"ut\",\"l_name\":\"qui\",\"email\":\"maiores\",\"phone_number\":\"voluptatem\",\"password\":\"dolorum\"}"
                         },
                         "description": "",
                         "auth": {
@@ -103,7 +103,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"omnis\",\"email\":\"ea\",\"phone_number\":\"quisquam\",\"token\":\"earum\",\"email_verified\":true}"
+                            "raw": "{\"name\":\"aut\",\"email\":\"autem\",\"phone_number\":\"dolor\",\"token\":\"laborum\",\"email_verified\":false}"
                         },
                         "description": "Login through google",
                         "auth": {
@@ -169,6 +169,128 @@
                             ],
                             "code": 401,
                             "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Services APIs",
+            "description": "",
+            "item": [
+                {
+                    "name": "Get all services.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/services",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/services"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Add a new service.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/services",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/services"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"title\":\"placeat\",\"price\":\"dolores\",\"location_lat\":\"in\",\"location_long\":\"vero\",\"description\":\"ut\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 201,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update a service.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/services\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/services\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "non",
+                                    "description": "The id of the service"
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"title\":\"recusandae\",\"description\":\"sit\",\"price\":\"ut\",\"location_lat\":\"ut\",\"location_long\":\"temporibus\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
                             "name": ""
                         }
                     ]

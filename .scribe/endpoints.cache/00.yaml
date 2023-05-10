@@ -22,14 +22,14 @@ endpoints:
         name: email
         description: 'The user''s email address'
         required: true
-        example: blanditiis
+        example: accusantium
         type: string
         custom: []
       password:
         name: password
         description: 'The user''s password'
         required: true
-        example: unde
+        example: ad
         type: string
         custom: []
     responses: []
@@ -61,35 +61,35 @@ endpoints:
         name: f_name
         description: 'The user''s first name'
         required: true
-        example: vero
+        example: ut
         type: string
         custom: []
       l_name:
         name: l_name
         description: 'The user''s last name'
         required: true
-        example: quod
+        example: qui
         type: string
         custom: []
       email:
         name: email
         description: 'The user''s email address'
         required: true
-        example: consequatur
+        example: maiores
         type: string
         custom: []
       phone_number:
         name: phone_number
         description: 'The user''s phone number'
         required: true
-        example: aut
+        example: voluptatem
         type: string
         custom: []
       password:
         name: password
         description: 'The user''s password'
         required: true
-        example: quidem
+        example: dolorum
         type: string
         custom: []
     responses: []
@@ -121,35 +121,35 @@ endpoints:
         name: name
         description: 'The name of the user'
         required: true
-        example: omnis
+        example: aut
         type: string
         custom: []
       email:
         name: email
         description: 'The email of the user'
         required: true
-        example: ea
+        example: autem
         type: string
         custom: []
       phone_number:
         name: phone_number
         description: 'The user''s phone number'
         required: false
-        example: quisquam
+        example: dolor
         type: string
         custom: []
       token:
         name: token
         description: 'A google provided token'
         required: false
-        example: earum
+        example: laborum
         type: string
         custom: []
       email_verified:
         name: email_verified
         description: 'Whether the user email is verified'
         required: false
-        example: true
+        example: false
         type: boolean
         custom: []
     responses:

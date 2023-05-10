@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
+use F9Web\ApiResponseHelpers;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
@@ -15,7 +16,7 @@ use Illuminate\Support\Facades\Validator;
  */
 class LoginController extends Controller
 {
-    use AuthenticatesUsers;
+    use AuthenticatesUsers, ApiResponseHelpers;
 
     protected $redirectTo = RouteServiceProvider::HOME;
 
@@ -87,8 +88,6 @@ class LoginController extends Controller
                 }
             }
 
-            $token = $request->user()->createToken($request->email);
-
             $user = User::when($request->has('email'), function ($query) use ($request) {
                             $query->where('email', $request->email);
                         })
@@ -103,10 +102,13 @@ class LoginController extends Controller
                 ]);
             }
 
-            return response()->json([
-                'access_token' => $token,
-                'user_data' => $user,
-            ]);
+            $token = $user->createToken($request->email)->plainTextToken;
+
+            // return response()->json([
+            //     'access_token' => $token,
+            //     'user_data' => $user,
+            // ]);
+            return $this->respondWithSuccess(['data' => $user, 'token' => $token]);
         }
     }
 }
