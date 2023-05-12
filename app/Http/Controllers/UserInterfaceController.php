@@ -34,7 +34,7 @@ class UserInterfaceController extends Controller
     $breadcrumbs = [
       ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "UI"], ['name' => "Feather Icons"]
     ];
-    return view('/admin/content/ui-pages/icons-feather', [
+    return view('admin.content.ui-pages.icons-feather', [
       'breadcrumbs' => $breadcrumbs
     ]);
   }

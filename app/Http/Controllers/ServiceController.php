@@ -44,12 +44,13 @@ class ServiceController extends Controller
      */
     public function store(StoreServiceRequest $request)
     {
-        $service_location = Http::get('https://maps.googleapis.com/maps/api/geocode/json?latlng='.$request->location_lat.','.$request->location_long.'&key=YOUR_API_KEY');
+        $service_location = Http::get('https://maps.googleapis.com/maps/api/geocode/json?latlng='.$request->location_lat.','.$request->location_long.'&key=AIzaSyCisnVFSnc5QVfU2Jm2W3oRLqMDrKwOEoM');
 
         $location = $service_location['results'][0]['formatted_address'];
+
         $service = Service::create([
             'title' => $request->title,
-            'description' => $request->has('description') && $request->description != ''? $request->description : NULL,
+            'description' => $request->has('description') && $request->description != '' ? $request->description : NULL,
             'price' => $request->price,
             'location' => $location,
             'location_lat' => $request->location_lat,
@@ -66,7 +67,7 @@ class ServiceController extends Controller
      * @urlParam id The id of the service
      *
      * @response 200
-     * @responseField data
+     * @responseField data The service details
      */
     public function show($id)
     {
@@ -82,6 +83,8 @@ class ServiceController extends Controller
 
     /**
      * Update a service.
+     *
+     * @authenticated
      *
      * @bodyParam title string required The title of the service
      * @bodyParam description string The description of the service
@@ -101,6 +104,8 @@ class ServiceController extends Controller
 
     /**
      * Delete a service.
+     *
+     * @authenticated
      *
      * @urlParam id The id of the service
      *

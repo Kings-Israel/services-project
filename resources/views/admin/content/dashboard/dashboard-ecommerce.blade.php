@@ -19,29 +19,12 @@
 <!-- Dashboard Ecommerce Starts -->
 <section id="dashboard-ecommerce">
   <div class="row match-height">
-    <!-- Medal Card -->
-    <div class="col-xl-4 col-md-6 col-12">
-      <div class="card card-congratulation-medal">
-        <div class="card-body">
-          <h5>Congratulations 🎉 John!</h5>
-          <p class="card-text font-small-3">You have won gold medal</p>
-          <h3 class="mb-75 mt-2 pt-50">
-            <a href="javascript:void(0);">$48.9k</a>
-          </h3>
-          <button type="button" class="btn btn-primary">View Sales</button>
-          <img src="{{asset('images/illustration/badge.svg')}}" class="congratulation-medal" alt="Medal Pic" />
-        </div>
-      </div>
-    </div>
-    <!--/ Medal Card -->
-
     <!-- Statistics Card -->
-    <div class="col-xl-8 col-md-6 col-12">
+    <div class="col-xl-12 col-md-12 col-12">
       <div class="card card-statistics">
         <div class="card-header">
           <h4 class="card-title">Statistics</h4>
           <div class="d-flex align-items-center">
-            <p class="card-text font-small-2 mr-25 mb-0">Updated 1 month ago</p>
           </div>
         </div>
         <div class="card-body statistics-body">

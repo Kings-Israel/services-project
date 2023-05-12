@@ -3,6 +3,7 @@
 namespace App\Helpers;
 
 use Config;
+use Illuminate\Support\Facades\Config as FacadesConfig;
 use Illuminate\Support\Str;
 
 class Helper
@@ -155,7 +156,7 @@ class Helper
         if (isset($pageConfigs)) {
             if (count($pageConfigs) > 0) {
                 foreach ($pageConfigs as $config => $val) {
-                    Config::set('custom.' . $demo . '.' . $config, $val);
+                    FacadesConfig::set('custom.' . $demo . '.' . $config, $val);
                 }
             }
         }

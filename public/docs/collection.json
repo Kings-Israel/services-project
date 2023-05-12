@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Services",
-        "_postman_id": "f89aa3ba-b3ce-4deb-8e4d-413f7102e83b",
+        "_postman_id": "9392d0d6-88bc-42dc-ac7a-87cb49b1718a",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"accusantium\",\"password\":\"ad\"}"
+                            "raw": "{\"email\":\"voluptatem\",\"password\":\"quasi\"}"
                         },
                         "description": "",
                         "auth": {
@@ -72,7 +72,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"f_name\":\"ut\",\"l_name\":\"qui\",\"email\":\"maiores\",\"phone_number\":\"voluptatem\",\"password\":\"dolorum\"}"
+                            "raw": "{\"f_name\":\"et\",\"l_name\":\"repudiandae\",\"email\":\"ipsa\",\"phone_number\":\"quisquam\",\"password\":\"omnis\"}"
                         },
                         "description": "",
                         "auth": {
@@ -103,7 +103,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"aut\",\"email\":\"autem\",\"phone_number\":\"dolor\",\"token\":\"laborum\",\"email_verified\":false}"
+                            "raw": "{\"name\":\"ipsam\",\"email\":\"magni\",\"phone_number\":\"voluptatem\",\"token\":\"incidunt\",\"email_verified\":true}"
                         },
                         "description": "Login through google",
                         "auth": {
@@ -236,7 +236,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"placeat\",\"price\":\"dolores\",\"location_lat\":\"in\",\"location_long\":\"vero\",\"description\":\"ut\"}"
+                            "raw": "{\"title\":\"repellat\",\"price\":\"aperiam\",\"location_lat\":\"quisquam\",\"location_long\":\"et\",\"description\":\"sapiente\"}"
                         },
                         "description": ""
                     },
@@ -261,7 +261,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "non",
+                                    "value": "saepe",
                                     "description": "The id of the service"
                                 }
                             ]
@@ -279,8 +279,51 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"recusandae\",\"description\":\"sit\",\"price\":\"ut\",\"location_lat\":\"ut\",\"location_long\":\"temporibus\"}"
+                            "raw": "{\"title\":\"nisi\",\"description\":\"ipsa\",\"price\":\"beatae\",\"location_lat\":\"cumque\",\"location_long\":\"quos\"}"
                         },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Show service details.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/services\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/services\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "voluptate",
+                                    "description": "The id of the service"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
                         "description": "",
                         "auth": {
                             "type": "noauth"

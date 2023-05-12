@@ -39,11 +39,11 @@ paths:
                 email:
                   type: string
                   description: 'The user''s email address'
-                  example: accusantium
+                  example: voluptatem
                 password:
                   type: string
                   description: 'The user''s password'
-                  example: ad
+                  example: quasi
               required:
                 - email
                 - password
@@ -80,23 +80,23 @@ paths:
                 f_name:
                   type: string
                   description: 'The user''s first name'
-                  example: ut
+                  example: et
                 l_name:
                   type: string
                   description: 'The user''s last name'
-                  example: qui
+                  example: repudiandae
                 email:
                   type: string
                   description: 'The user''s email address'
-                  example: maiores
+                  example: ipsa
                 phone_number:
                   type: string
                   description: 'The user''s phone number'
-                  example: voluptatem
+                  example: quisquam
                 password:
                   type: string
                   description: 'The user''s password'
-                  example: dolorum
+                  example: omnis
               required:
                 - f_name
                 - l_name
@@ -144,23 +144,23 @@ paths:
                 name:
                   type: string
                   description: 'The name of the user'
-                  example: aut
+                  example: ipsam
                 email:
                   type: string
                   description: 'The email of the user'
-                  example: autem
+                  example: magni
                 phone_number:
                   type: string
                   description: 'The user''s phone number'
-                  example: dolor
+                  example: voluptatem
                 token:
                   type: string
                   description: 'A google provided token'
-                  example: laborum
+                  example: incidunt
                 email_verified:
                   type: boolean
                   description: 'Whether the user email is verified'
-                  example: false
+                  example: true
               required:
                 - name
                 - email
@@ -270,23 +270,23 @@ paths:
                 title:
                   type: string
                   description: 'The title of the new service'
-                  example: placeat
+                  example: repellat
                 price:
                   type: string
                   description: 'The price of the new service'
-                  example: dolores
+                  example: aperiam
                 location_lat:
                   type: string
                   description: 'The latitude location of the new service'
-                  example: in
+                  example: quisquam
                 location_long:
                   type: string
                   description: 'The longitude location of the new service'
-                  example: vero
+                  example: et
                 description:
                   type: text
                   description: 'The description of the new service'
-                  example: ut
+                  example: sapiente
               required:
                 - title
                 - price
@@ -332,25 +332,55 @@ paths:
                 title:
                   type: string
                   description: 'The title of the service'
-                  example: recusandae
+                  example: nisi
                 description:
                   type: string
                   description: 'The description of the service'
-                  example: sit
+                  example: ipsa
                 price:
                   type: string
                   description: 'The price of the service'
-                  example: ut
+                  example: beatae
                 location_lat:
                   type: string
                   description: 'The latitude location of the new service'
-                  example: ut
+                  example: cumque
                 location_long:
                   type: string
                   description: 'The longitude location of the new service'
-                  example: temporibus
+                  example: quos
               required:
                 - title
+      security: []
+    get:
+      summary: 'Show service details.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example: {  }
+                properties: {  }
+      tags:
+        - 'Services APIs'
       security: []
     parameters:
       -
@@ -366,7 +396,7 @@ paths:
             value: ''
           present:
             summary: 'When the value is present'
-            value: non
+            value: saepe
 tags:
   -
     name: 'Authentication APIs'

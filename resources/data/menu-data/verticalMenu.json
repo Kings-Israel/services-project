@@ -1,51 +1,78 @@
 {
   "menu": [
     {
-      "name": "Dashboards",
-      "badge": "2",
+      "name": "Dashboard",
       "badgeClass": "badge badge-light-warning badge-pill ml-auto mr-1",
       "icon": "home",
       "slug": "",
-      "submenu": [
-        {
-          "url": "dashboard/analytics",
-          "name": "Analytics",
-          "icon": "circle",
-          "slug": "dashboard-analytics"
-        },
-        {
-          "url": "/",
-          "name": "eCommerce",
-          "icon": "circle",
-          "slug": "dashboard-ecommerce"
-        }
-      ]
+      "url": "/admin"
     },
-
+    {
+        "name": "Users",
+        "badgeClass": "badge badge-light-warning badge-pill ml-auto mr-1",
+        "icon": "users",
+        "slug": "",
+        "url": "/admin/app/user/list"
+    },
+    {
+        "name": "Services",
+        "badgeClass": "badge badge-light-warning badge-pill ml-auto mr-1",
+        "icon": "tool",
+        "slug": "",
+        "url": "/admin"
+    },
+    {
+        "name": "Ratings and Reviews",
+        "badgeClass": "badge badge-light-warning badge-pill ml-auto mr-1",
+        "icon": "star",
+        "slug": "",
+        "url": "/admin"
+    },
+    {
+        "name": "Settings",
+        "badgeClass": "badge badge-light-warning badge-pill ml-auto mr-1",
+        "icon": "settings",
+        "slug": "",
+        "url": "/admin"
+    },
+    {
+        "name": "FAQs",
+        "badgeClass": "badge badge-light-warning badge-pill ml-auto mr-1",
+        "icon": "help-circle",
+        "slug": "",
+        "url": "/admin"
+    },
+    {
+        "name": "Activity Log",
+        "badgeClass": "badge badge-light-warning badge-pill ml-auto mr-1",
+        "icon": "activity",
+        "slug": "",
+        "url": "/admin"
+    },
     {
       "navheader": "Apps & Pages",
       "slug": ""
     },
     {
-      "url": "app/email",
+      "url": "/admin/app/email",
       "name": "Email",
       "icon": "mail",
       "slug": "app-email"
     },
     {
-      "url": "app/chat",
+      "url": "/admin/app/chat",
       "name": "Chat",
       "icon": "message-square",
       "slug": "app-chat"
     },
     {
-      "url": "app/todo",
+      "url": "/admin/app/todo",
       "name": "Todo",
       "icon": "check-square",
       "slug": "app-todo"
     },
     {
-      "url": "app/calendar",
+      "url": "/admin/app/calendar",
       "name": "Calendar",
       "icon": "calendar",
       "slug": "app-calendar"
@@ -130,19 +157,19 @@
       "slug": "",
       "submenu": [
         {
-          "url": "app/user/list",
+          "url": "/admin/app/user/list",
           "name": "List",
           "icon": "circle",
           "slug": "app-user-list"
         },
         {
-          "url": "app/user/view",
+          "url": "/admin/app/user/view",
           "name": "View",
           "icon": "circle",
           "slug": "app-user-view"
         },
         {
-          "url": "app/user/edit",
+          "url": "/admin/app/user/edit",
           "name": "Edit",
           "icon": "circle",
           "slug": "app-user-edit"
@@ -330,19 +357,19 @@
       "slug": ""
     },
     {
-      "url": "ui/typography",
+      "url": "/admin/ui/typography",
       "name": "Typography",
       "icon": "type",
       "slug": "ui-typography"
     },
     {
-      "url": "ui/colors",
+      "url": "/admin/ui/colors",
       "name": "Colors",
       "icon": "droplet",
       "slug": "ui-colors"
     },
     {
-      "url": "icons/feather",
+      "url": "/admin/icons/feather",
       "name": "Feather",
       "icon": "eye",
       "slug": "icons-feather"
